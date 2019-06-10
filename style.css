@@ -91,6 +91,10 @@
     display: block;
  }
 
+ .person:hover .pay {
+     display: none;
+ }
+
 @media (max-width: 990px) {
     .people {
     display: grid;
