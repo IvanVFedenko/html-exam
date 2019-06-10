@@ -1,32 +1,31 @@
-.peoples {
-    display: flex;
+.people {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+    grid-column-gap: 30px;
+    grid-row-gap: 90px;
     justify-content: center;
 }
 
-.people {
-
-
-  display: grid;
-  grid-template-columns: 200px 200px 200px 200px;
-  grid-auto-rows: 200px;
-  grid-column-gap: 30px;
-  grid-row-gap: 90px;
-   
-  
-}
-
-.photo {
+.photo img{
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    box-sizing: border-box;
-    margin: 50px 15px;
-    position: relative;
-    
+}
 
+.photo {
+    position: relative;
+    margin-bottom: 4px;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .rank{
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,8 +34,8 @@
     background-color: white;
     border-radius: 50%;
     position: absolute;
-    top: 65%;
-    left: 87%;
+    top: 80px;
+    left: 160px;
     font-family: Arial;
     font-size: 16px;
     line-height: 18px;
@@ -46,54 +45,27 @@
 	
 }
 
- .person {
-
-text-align: center;
-position: relative;
-
-} 
+.extra {
+    display: none;
+}
 
 .name {
-  
-font-family: Arial;
-font-size: 20px;
-line-height: 23px;
-
-
-text-align: right;
-
-color: #2F4F4F;
-
+   
+    width: 160px;
+    height: 23px;
+    left: 765px;
+    top: 238px;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    text-align: center;
+    color: #2F4F4F;
 }
 
-@media (max-width: 990px) {
-    .people {
-    display: grid;
-    grid-template-columns: 200px 200px;
-    grid-auto-rows: 200px;
-    grid-column-gap: 30px;
-    grid-row-gap: 70px;
+.photo:hover {
+    width: 220px;
+    
+    background-color: darkgray;
+    text-align: center;
 }
-}
-
-.extra {
-    visibility: hidden;
-}
-
-.sport {
-    width: 154px;
-height: 21px;
-left: 308px;
-top: 541px;
-
-font-family: Arial;
-font-size: 18px;
-line-height: 21px;
-
-
-text-align: center;
-
-color: #000000;
-
-}
-
